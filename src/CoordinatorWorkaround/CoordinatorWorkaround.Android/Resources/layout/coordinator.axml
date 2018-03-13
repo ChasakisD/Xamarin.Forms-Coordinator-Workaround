@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/myCoordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
@@ -9,12 +8,12 @@
         android:id="@+id/appbar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:fitsSystemWindows="true">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsingToolBar"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:contentScrim="?attr/colorPrimary"
@@ -22,7 +21,8 @@
             <ImageView
                 app:layout_collapseMode="parallax"
                 android:src="@drawable/icon"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
+                android:fitsSystemWindows="true"
                 android:layout_width="match_parent"
                 android:layout_height="350dp" />
             <android.support.v7.widget.Toolbar
@@ -35,35 +35,12 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
+        android:fillViewport="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <android.support.v7.widget.CardView
-            android:layout_height="wrap_content"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="5dp"
-            app:cardUseCompatPadding="true">
-            <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:padding="16dp"
-                    android:textSize="18sp"
-                    android:layout_marginTop="12dp"
-                    android:textStyle="bold"
-                    android:text="My Card Content"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-            <TextView
-                android:padding="16dp"
-                android:textSize="10sp"
-                android:lineSpacingMultiplier="1.5"
-                android:text="My Card Title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </android.support.v7.widget.CardView>
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentContainer" />
     </android.support.v4.widget.NestedScrollView>
     <android.support.design.widget.FloatingActionButton
         android:src="@drawable/icon"

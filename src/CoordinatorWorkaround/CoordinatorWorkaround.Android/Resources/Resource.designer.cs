@@ -2853,8 +2853,8 @@ namespace CoordinatorWorkaround.Droid
 			// aapt resource value: 0x7f080023
 			public const int always = 2131230755;
 			
-			// aapt resource value: 0x7f080074
-			public const int appbar = 2131230836;
+			// aapt resource value: 0x7f080073
+			public const int appbar = 2131230835;
 			
 			// aapt resource value: 0x7f08002f
 			public const int auto = 2131230767;
@@ -2895,8 +2895,8 @@ namespace CoordinatorWorkaround.Droid
 			// aapt resource value: 0x7f080024
 			public const int collapseActionView = 2131230756;
 			
-			// aapt resource value: 0x7f080075
-			public const int collapsingToolBar = 2131230837;
+			// aapt resource value: 0x7f080074
+			public const int collapsingToolBar = 2131230836;
 			
 			// aapt resource value: 0x7f080079
 			public const int container = 2131230841;
@@ -2972,6 +2972,9 @@ namespace CoordinatorWorkaround.Droid
 			
 			// aapt resource value: 0x7f08003f
 			public const int @fixed = 2131230783;
+			
+			// aapt resource value: 0x7f080076
+			public const int fragmentContainer = 2131230838;
 			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
@@ -3105,11 +3108,8 @@ namespace CoordinatorWorkaround.Droid
 			// aapt resource value: 0x7f080019
 			public const int multiply = 2131230745;
 			
-			// aapt resource value: 0x7f080073
-			public const int myCoordinatorLayout = 2131230835;
-			
-			// aapt resource value: 0x7f080076
-			public const int myToolBar = 2131230838;
+			// aapt resource value: 0x7f080075
+			public const int myToolBar = 2131230837;
 			
 			// aapt resource value: 0x7f08007f
 			public const int navigation_header_container = 2131230847;
@@ -3502,7 +3502,7 @@ namespace CoordinatorWorkaround.Droid
 			public const int abc_select_dialog_material = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int coordinator = 2130903067;
+			public const int Coordinator = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
 			public const int design_bottom_navigation_item = 2130903068;
