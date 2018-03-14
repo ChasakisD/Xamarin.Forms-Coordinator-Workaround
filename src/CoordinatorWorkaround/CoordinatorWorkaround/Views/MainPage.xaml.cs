@@ -1,5 +1,6 @@
 ﻿using System;
 using CoordinatorWorkaround.CustomViews;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace CoordinatorWorkaround.Views
@@ -14,7 +15,24 @@ namespace CoordinatorWorkaround.Views
 
 	    private async void Button_OnClicked(object sender, EventArgs e)
 	    {
-	        await Navigation.PushAsync(new CoordinatorPage { NestedContent = new NestedPage(), ImageSource = "splash.png" });
+	        var cmd = new Command(async () => await DisplayAlert("hehe", "hehe", "ok"), () => true);
+
+	        var page = new CoordinatorPage
+	        {
+                Title = "Finally Worked Monkeys!",
+	            NestedContent = new NestedPage(),
+	            ImageSource = "splash.png",
+	            StatusBarColor = Color.DarkMagenta,
+                ToolbarBackgroundColor = Color.DimGray,
+                CoordinatorBackgroundColor = Color.Green,
+	            CoordinatorScrimBackgroundColor = Color.Red,
+	            FloatingButtonImageSource = "icon.png",
+                FloatingButtonBackgroundColor = Color.DarkRed,
+                FloatingButtonCommand = cmd
+	        };
+
+
+            await Navigation.PushAsync(page);
 	    }
 	}
 }
