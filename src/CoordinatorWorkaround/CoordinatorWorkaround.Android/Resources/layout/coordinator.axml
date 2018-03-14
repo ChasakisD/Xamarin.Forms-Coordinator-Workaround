@@ -19,6 +19,7 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleTextAppearance="@android:color/transparent">
             <ImageView
+                android:id="@+id/coordinatorImageView"
                 app:layout_collapseMode="parallax"
                 android:src="@drawable/icon"
                 android:scaleType="fitXY"

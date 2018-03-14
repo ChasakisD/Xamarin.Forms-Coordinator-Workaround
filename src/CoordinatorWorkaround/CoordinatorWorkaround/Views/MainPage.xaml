@@ -2,5 +2,17 @@
 <ContentPage
     x:Class="CoordinatorWorkaround.Views.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:coordinatorWorkaround="clr-namespace:CoordinatorWorkaround;assembly=CoordinatorWorkaround" />
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <StackLayout>
+        <Label
+            HorizontalOptions="CenterAndExpand"
+            Text="Welcome to Xamarin.Forms!"
+            VerticalOptions="CenterAndExpand" />
+        <Button
+            Margin="8"
+            Clicked="Button_OnClicked"
+            HorizontalOptions="Center"
+            Text="Go To Coordinator"
+            VerticalOptions="Center" />
+    </StackLayout>
+</ContentPage>

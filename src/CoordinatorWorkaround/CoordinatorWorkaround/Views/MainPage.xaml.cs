@@ -1,4 +1,5 @@
-﻿using CoordinatorWorkaround.CustomViews;
+﻿using System;
+using CoordinatorWorkaround.CustomViews;
 using Xamarin.Forms.Xaml;
 
 namespace CoordinatorWorkaround.Views
@@ -9,8 +10,11 @@ namespace CoordinatorWorkaround.Views
 		public MainPage ()
 		{
 			InitializeComponent ();
-            
-		    Content = new CoordinatorView{NestedContent = new NestedPage()};
 		}
+
+	    private async void Button_OnClicked(object sender, EventArgs e)
+	    {
+	        await Navigation.PushAsync(new CoordinatorPage { NestedContent = new NestedPage(), ImageSource = "splash.png" });
+	    }
 	}
 }
