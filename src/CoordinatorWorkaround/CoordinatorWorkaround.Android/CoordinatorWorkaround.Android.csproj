@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>CoordinatorWorkaround.Droid</RootNamespace>
     <AssemblyName>CoordinatorWorkaround.Android</AssemblyName>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\CoordinatorRenderer.cs" />
+    <Compile Include="Renderers\Forms.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
