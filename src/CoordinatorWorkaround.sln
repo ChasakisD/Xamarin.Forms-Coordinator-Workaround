@@ -5,7 +5,30 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatorWorkaround.Android", "CoordinatorWorkaround\CoordinatorWorkaround.Android\CoordinatorWorkaround.Android.csproj", "{7DFEAEC8-EFA1-45DD-BF96-85D0946AF57A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatorWorkaround", "CoordinatorWorkaround\CoordinatorWorkaround\CoordinatorWorkaround.csproj", "{B14723BC-0736-43E1-8E89-C1C4579B9E6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoordinatorWorkaround", "CoordinatorWorkaround\CoordinatorWorkaround\CoordinatorWorkaround.csproj", "{B14723BC-0736-43E1-8E89-C1C4579B9E6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{2F4BAAE3-D9AF-4C5F-AC08-46C2B1C9812E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatorSample.Android", "CoordinatorSample\CoordinatorSample.Android\CoordinatorSample.Android.csproj", "{D10618F7-C5A7-4E0B-A159-053DC51EE51F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoordinatorSample", "CoordinatorSample\CoordinatorSample\CoordinatorSample.csproj", "{B1D91F6C-F65B-40B9-AE9F-D64F74E7056A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A86EA8E7-E229-41A9-A6BE-68E9D514AA14}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Coordinator.0.0.11.nupkg = Solution Items\Coordinator.0.0.11.nupkg
+		Solution Items\Coordinator.nuspec = Solution Items\Coordinator.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{F2FAC644-8A23-4614-86DE-81918E28781B}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\lib\Coordinator.axml = Solution Items\lib\Coordinator.axml
+		Solution Items\lib\CoordinatorWorkaround.Android.dll = Solution Items\lib\CoordinatorWorkaround.Android.dll
+		Solution Items\lib\CoordinatorWorkaround.Android.dll.mdb = Solution Items\lib\CoordinatorWorkaround.Android.dll.mdb
+		Solution Items\lib\CoordinatorWorkaround.Android.pdb = Solution Items\lib\CoordinatorWorkaround.Android.pdb
+		Solution Items\lib\CoordinatorWorkaround.deps.json = Solution Items\lib\CoordinatorWorkaround.deps.json
+		Solution Items\lib\CoordinatorWorkaround.dll = Solution Items\lib\CoordinatorWorkaround.dll
+		Solution Items\lib\CoordinatorWorkaround.pdb = Solution Items\lib\CoordinatorWorkaround.pdb
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +46,24 @@ Global
 		{B14723BC-0736-43E1-8E89-C1C4579B9E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B14723BC-0736-43E1-8E89-C1C4579B9E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B14723BC-0736-43E1-8E89-C1C4579B9E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10618F7-C5A7-4E0B-A159-053DC51EE51F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10618F7-C5A7-4E0B-A159-053DC51EE51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10618F7-C5A7-4E0B-A159-053DC51EE51F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D10618F7-C5A7-4E0B-A159-053DC51EE51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10618F7-C5A7-4E0B-A159-053DC51EE51F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10618F7-C5A7-4E0B-A159-053DC51EE51F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B1D91F6C-F65B-40B9-AE9F-D64F74E7056A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D91F6C-F65B-40B9-AE9F-D64F74E7056A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D91F6C-F65B-40B9-AE9F-D64F74E7056A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D91F6C-F65B-40B9-AE9F-D64F74E7056A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D10618F7-C5A7-4E0B-A159-053DC51EE51F} = {2F4BAAE3-D9AF-4C5F-AC08-46C2B1C9812E}
+		{B1D91F6C-F65B-40B9-AE9F-D64F74E7056A} = {2F4BAAE3-D9AF-4C5F-AC08-46C2B1C9812E}
+		{F2FAC644-8A23-4614-86DE-81918E28781B} = {A86EA8E7-E229-41A9-A6BE-68E9D514AA14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEA4128A-4067-4182-8E9D-7B0EBCCB8FA3}

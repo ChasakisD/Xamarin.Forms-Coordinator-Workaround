@@ -83,12 +83,18 @@ namespace CoordinatorWorkaround.Droid.Renderers
 
                 _activity = activity;
 
+                System.Diagnostics.Debug.WriteLine("Found Activity id: " + _activity);
+                System.Diagnostics.Debug.WriteLine("Found Coordinator id: " + Resource.Layout.Coordinator);
+
                 _currentView = _activity.LayoutInflater.Inflate(Resource.Layout.Coordinator, this, false);
                 AddView(_currentView);
 
-                _previousToolbar = _activity.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+               _previousToolbar = _activity.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
                 var toolbar = _currentView.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.myToolBar);
                 if(toolbar == null) return;
+
+                System.Diagnostics.Debug.WriteLine("Found Previous Toolbar id: " + _previousToolbar.Id);
+                System.Diagnostics.Debug.WriteLine("Found Toolbar id: " + toolbar.Id);
 
                 if (!(e.NewElement is CoordinatorPage view)) return;
 
@@ -96,6 +102,9 @@ namespace CoordinatorWorkaround.Droid.Renderers
                 if(fragment == null)  return;
 
                 var fragmentContainer = _currentView.FindViewById<FrameLayout>(Resource.Id.fragmentContainer);
+
+                System.Diagnostics.Debug.WriteLine("Found Fragment Container id: " + fragmentContainer.Id);
+
                 _activity.SupportFragmentManager
                     .BeginTransaction()
                     .Replace(fragmentContainer.Id, fragment)

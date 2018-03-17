@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms.Xaml;
 
-namespace CoordinatorWorkaround.Views
+namespace CoordinatorSample
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class NestedPage

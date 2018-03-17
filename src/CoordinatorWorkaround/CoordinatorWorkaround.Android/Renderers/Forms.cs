@@ -2,6 +2,9 @@
 {
 	public static class Forms
 	{
-		public static void Init() { }
+	    public static void Init()
+	    {
+
+	    }
 	}
 }

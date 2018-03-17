@@ -1,14 +1,19 @@
-﻿using CoordinatorWorkaround.Views;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using CoordinatorWorkaround.CustomViews;
 using Xamarin.Forms;
 
-namespace CoordinatorWorkaround
+namespace CoordinatorSample
 {
 	public partial class App
 	{
 		public App ()
 		{
 			InitializeComponent();
-            MainPage = new NavigationPage(new MainPage());
+
+			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()
