@@ -17,31 +17,6 @@ namespace CoordinatorWorkaround.Droid.Renderers
 {
     public class CoordinatorRenderer : PageRenderer
     {
-        /*public CoordinatorRenderer(Context context) : base(context) { }
-      
-        protected override void OnElementChanged(ElementChangedEventArgs<CoordinatorPage> e)
-        {
-            base.OnElementChanged(e);
-
-            if (e.OldElement != null || Element == null)
-                return;
-
-            try
-            {
-                if(!(Context is FormsAppCompatActivity activity)) return;
-
-                if (!(e.NewElement is CoordinatorPage view)) return;
-                CoordinatorActivity.View = view;
-
-                var tActivity = new Intent(activity, typeof(CoordinatorActivity));
-                activity.StartActivity(tActivity);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex);
-            }
-        }*/
-
         private FormsAppCompatActivity _activity;
         private Android.Views.View _currentView;
 
@@ -67,7 +42,8 @@ namespace CoordinatorWorkaround.Droid.Renderers
             if (Element == null)
                 return;
 
-            if (e.PropertyName != nameof(CoordinatorPage.ImageSource) &&
+            if (e.PropertyName != nameof(CoordinatorPage.Title) &&
+                e.PropertyName != nameof(CoordinatorPage.ImageSource) &&
                 e.PropertyName != nameof(CoordinatorPage.ToolbarBackgroundColor) &&
                 e.PropertyName != nameof(CoordinatorPage.StatusBarColor) &&
                 e.PropertyName != nameof(CoordinatorPage.CoordinatorBackgroundColor) &&
@@ -78,8 +54,7 @@ namespace CoordinatorWorkaround.Droid.Renderers
                 e.PropertyName != nameof(CoordinatorPage.ChangeStatusBarColor) &&
                 e.PropertyName != nameof(CoordinatorPage.HasBackButton))
                 return;
-
-
+            
             UpdateCoordinatorLayout();
         }
 
@@ -101,8 +76,6 @@ namespace CoordinatorWorkaround.Droid.Renderers
                 
                 var toolbar = _currentView.FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.myToolBar);
                 if (toolbar == null) return;
-                
-                System.Diagnostics.Debug.WriteLine("Found Toolbar id: " + toolbar.Id);
 
                 if (!(e.NewElement is CoordinatorPage view)) return;
 
@@ -147,6 +120,9 @@ namespace CoordinatorWorkaround.Droid.Renderers
                 _currentView.FindViewById<Android.Support.Design.Widget.CollapsingToolbarLayout>(Resource.Id
                     .collapsingToolBar);
             collBar.SetContentScrimColor(view.CoordinatorScrimBackgroundColor.ToAndroid());
+            
+            /* Toolbar Title */
+            collBar.Title = view.Title;
 
             /* Status Bar Background Color */
             if (view.ChangeStatusBarColor)
@@ -158,9 +134,6 @@ namespace CoordinatorWorkaround.Droid.Renderers
                     _activity.Window.SetStatusBarColor(view.StatusBarColor.ToAndroid());
                 }
             }
-
-            /* Toolbar Title */
-            toolbar.Title = view.Title;
 
             /* Coordinator Layout Background Color */
             var coordinator =
