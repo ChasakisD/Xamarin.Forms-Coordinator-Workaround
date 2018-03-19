@@ -62,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Coordinator.axml" />
-    <AndroidResource Include="Resources\drawable\splash.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoordinatorWorkaround\CoordinatorWorkaround.csproj">

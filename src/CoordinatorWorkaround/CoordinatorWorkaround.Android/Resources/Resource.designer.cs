@@ -2187,26 +2187,26 @@ namespace CoordinatorWorkaround.Droid
 			// aapt resource value: 0x7f020053
 			public static int avd_hide_password = 2130837587;
 			
+			// aapt resource value: 0x7f02010d
+			public static int avd_hide_password_1 = 2130837773;
+			
 			// aapt resource value: 0x7f02010e
-			public static int avd_hide_password_1 = 2130837774;
+			public static int avd_hide_password_2 = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public static int avd_hide_password_2 = 2130837775;
-			
-			// aapt resource value: 0x7f020110
-			public static int avd_hide_password_3 = 2130837776;
+			public static int avd_hide_password_3 = 2130837775;
 			
 			// aapt resource value: 0x7f020054
 			public static int avd_show_password = 2130837588;
 			
+			// aapt resource value: 0x7f020110
+			public static int avd_show_password_1 = 2130837776;
+			
 			// aapt resource value: 0x7f020111
-			public static int avd_show_password_1 = 2130837777;
+			public static int avd_show_password_2 = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public static int avd_show_password_2 = 2130837778;
-			
-			// aapt resource value: 0x7f020113
-			public static int avd_show_password_3 = 2130837779;
+			public static int avd_show_password_3 = 2130837778;
 			
 			// aapt resource value: 0x7f020055
 			public static int design_bottom_navigation_item_background = 2130837589;
@@ -2748,20 +2748,17 @@ namespace CoordinatorWorkaround.Droid
 			// aapt resource value: 0x7f020108
 			public static int notification_icon_background = 2130837768;
 			
-			// aapt resource value: 0x7f02010c
-			public static int notification_template_icon_bg = 2130837772;
+			// aapt resource value: 0x7f02010b
+			public static int notification_template_icon_bg = 2130837771;
 			
-			// aapt resource value: 0x7f02010d
-			public static int notification_template_icon_low_bg = 2130837773;
+			// aapt resource value: 0x7f02010c
+			public static int notification_template_icon_low_bg = 2130837772;
 			
 			// aapt resource value: 0x7f020109
 			public static int notification_tile_bg = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
 			public static int notify_panel_notification_icon_bg = 2130837770;
-			
-			// aapt resource value: 0x7f02010b
-			public static int splash = 2130837771;
 			
 			static Drawable()
 			{

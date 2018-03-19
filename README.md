@@ -3,7 +3,8 @@ A Xamarin.Forms (Android Only) Implementation of CoordinatorLayout with Collapsi
 
 [![NuGet version](https://badge.fury.io/nu/XamarinForms.CoordinatorLayout.Android.svg)](https://badge.fury.io/nu/XamarinForms.CoordinatorLayout.Android)
 
-## Documentation
+# Documentation
+## Installation
 
 #### Xamarin.Android
 Initialize the renderer below the Xamarin.Forms.Init

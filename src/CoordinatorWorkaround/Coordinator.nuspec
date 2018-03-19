@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>XamarinForms.CoordinatorLayout.Android</id>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <title>Coordinator Layout for Xamarin.Forms Android</title>
     <authors>ChasakisD</authors>
     <owners>ChasakisD</owners>
@@ -14,7 +14,9 @@
     <summary>
         A Xamarin.Forms Android only implementation of coordinator layout and collapsing toolbar
     </summary>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+      [0.0.2] - Minor Changes
+    </releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>coordinator, layout, coordinator layout, xamarin, forms, android, xamarin.forms</tags>
     <dependencies>

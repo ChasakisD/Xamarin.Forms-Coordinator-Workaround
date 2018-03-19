@@ -13,20 +13,20 @@ namespace CoordinatorSample
 
 	    private async void Button_OnClicked(object sender, EventArgs e)
 	    {
-	        var cmd = new Command(async () => await DisplayAlert("hehe", "hehe", "ok"), () => true);
-
 	        var page = new CoordinatorPage
 	        {
 	            Title = "Finally Worked Monkeys!",
 	            NestedContent = new NestedPage(),
-	            ImageSource = "splash.png",
-	            StatusBarColor = Color.DarkMagenta,
-	            ToolbarBackgroundColor = Color.DimGray,
-	            CoordinatorBackgroundColor = Color.Green,
-	            CoordinatorScrimBackgroundColor = Color.Red,
+	            ImageSource = "monkey.png",
+	            StatusBarColor = Color.MediumAquamarine,
+	            ToolbarBackgroundColor = Color.MediumAquamarine,
+	            CoordinatorBackgroundColor = Color.MediumAquamarine,
+	            CoordinatorScrimBackgroundColor = Color.Transparent,
 	            FloatingButtonImageSource = "icon.png",
 	            FloatingButtonBackgroundColor = Color.DarkRed,
-	            FloatingButtonCommand = cmd
+	            FloatingButtonCommand = new Command(async () => await DisplayAlert("hehe", "hehe", "ok"), () => true),
+                ChangeStatusBarColor = true,
+                HasBackButton = true
 	        };
 
 
