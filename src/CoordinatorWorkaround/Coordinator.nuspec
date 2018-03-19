@@ -1,17 +1,22 @@
 <?xml version="1.0"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>Coordinator</id>
+    <id>XamarinForms.CoordinatorLayout.Android</id>
     <version>0.0.1</version>
-    <title>XamarinForms.CoordinatorLayout.Android</title>
+    <title>Coordinator Layout for Xamarin.Forms Android</title>
     <authors>ChasakisD</authors>
     <owners>ChasakisD</owners>
     <projectUrl>https://github.com/ChasakisD/Xamarin.Forms-Coordinator-Workaround</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A Xamarin.Forms Android only implementation of coordinator layout and collapsing toolbar</description>
+    <description>
+        A Xamarin.Forms Android only implementation of coordinator layout and collapsing toolbar
+    </description>
+    <summary>
+        A Xamarin.Forms Android only implementation of coordinator layout and collapsing toolbar
+    </summary>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2018</copyright>
-    <tags>coordinator layout xamarin forms android xamarin.forms</tags>
+    <tags>coordinator, layout, coordinator layout, xamarin, forms, android, xamarin.forms</tags>
     <dependencies>
       <dependency id="Xamarin.Forms" version="2.5.0.121934" />
     </dependencies>
@@ -32,6 +37,5 @@
         target="lib\MonoAndroid71" />
     <file src="CoordinatorWorkaround.Android\bin\Release\CoordinatorWorkaround.Android.pdb" 
         target="lib\MonoAndroid71" />
-    
   </files>
 </package>
