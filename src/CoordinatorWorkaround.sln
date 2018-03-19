@@ -13,21 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoordinatorSample.Android",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoordinatorSample", "CoordinatorSample\CoordinatorSample\CoordinatorSample.csproj", "{B1D91F6C-F65B-40B9-AE9F-D64F74E7056A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A86EA8E7-E229-41A9-A6BE-68E9D514AA14}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{7CAB91D2-251B-4D55-BF79-0DBE09CDCE48}"
 	ProjectSection(SolutionItems) = preProject
-		Solution Items\Coordinator.0.0.11.nupkg = Solution Items\Coordinator.0.0.11.nupkg
-		Solution Items\Coordinator.nuspec = Solution Items\Coordinator.nuspec
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{F2FAC644-8A23-4614-86DE-81918E28781B}"
-	ProjectSection(SolutionItems) = preProject
-		Solution Items\lib\Coordinator.axml = Solution Items\lib\Coordinator.axml
-		Solution Items\lib\CoordinatorWorkaround.Android.dll = Solution Items\lib\CoordinatorWorkaround.Android.dll
-		Solution Items\lib\CoordinatorWorkaround.Android.dll.mdb = Solution Items\lib\CoordinatorWorkaround.Android.dll.mdb
-		Solution Items\lib\CoordinatorWorkaround.Android.pdb = Solution Items\lib\CoordinatorWorkaround.Android.pdb
-		Solution Items\lib\CoordinatorWorkaround.deps.json = Solution Items\lib\CoordinatorWorkaround.deps.json
-		Solution Items\lib\CoordinatorWorkaround.dll = Solution Items\lib\CoordinatorWorkaround.dll
-		Solution Items\lib\CoordinatorWorkaround.pdb = Solution Items\lib\CoordinatorWorkaround.pdb
+		CoordinatorWorkaround\Coordinator.nuspec = CoordinatorWorkaround\Coordinator.nuspec
 	EndProjectSection
 EndProject
 Global
@@ -63,7 +51,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D10618F7-C5A7-4E0B-A159-053DC51EE51F} = {2F4BAAE3-D9AF-4C5F-AC08-46C2B1C9812E}
 		{B1D91F6C-F65B-40B9-AE9F-D64F74E7056A} = {2F4BAAE3-D9AF-4C5F-AC08-46C2B1C9812E}
-		{F2FAC644-8A23-4614-86DE-81918E28781B} = {A86EA8E7-E229-41A9-A6BE-68E9D514AA14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEA4128A-4067-4182-8E9D-7B0EBCCB8FA3}

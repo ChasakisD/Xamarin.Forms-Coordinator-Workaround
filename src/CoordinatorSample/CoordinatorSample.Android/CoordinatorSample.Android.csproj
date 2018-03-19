@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>CoordinatorSample.Droid</RootNamespace>
     <AssemblyName>CoordinatorSample.Android</AssemblyName>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -80,6 +80,14 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CoordinatorWorkaround\CoordinatorWorkaround.Android\CoordinatorWorkaround.Android.csproj">
+      <Project>{7dfeaec8-efa1-45dd-bf96-85d0946af57a}</Project>
+      <Name>CoordinatorWorkaround.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CoordinatorWorkaround\CoordinatorWorkaround\CoordinatorWorkaround.csproj">
+      <Project>{b14723bc-0736-43e1-8e89-c1c4579b9e6f}</Project>
+      <Name>CoordinatorWorkaround</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CoordinatorSample\CoordinatorSample.csproj">
       <Project>{F4F17750-B2C5-429E-A554-505C3BFB8E2C}</Project>
       <Name>CoordinatorSample</Name>
