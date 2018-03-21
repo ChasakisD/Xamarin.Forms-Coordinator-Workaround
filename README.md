@@ -38,38 +38,17 @@ var page = new CoordinatorPage
 ```
 
 ## Bindable Properties
-#### NestedContent
-Type of ContentPage, the content of the NestedScrollView
-
-#### ImageSource
-The Source of the image that is used inside the CollapsingToolbar
-
-#### ToolbarBackgroundColor
-Type of Xamarin.Forms.Color, the background color of the toolbar
-
-#### ChangeStatusBarColor
-Type of bool, if you want to change the color of the status bar
-
-#### StatusBarColor
-Type of Xamarin.Forms.Color, the background color of the status bar (Only if ChangeStatusBarColor is set to true)
-
-#### CoordinatorScrimBackgroundColor
-Type of Xamarin.Forms.Color, the color of the scrim effect in the collapsing toolbar
-
-#### CoordinatorBackgroundColor
-Type of Xamarin.Forms.Color, the background color of the coordinator layout (the background of the image source)
-
-#### HasBackButton
-Type of bool, if you want the toolbar have the back button
-
-#### IsFloatingButtonEnabled
-Type of bool, if you want the floating action button to be enabled
-
-#### FloatingButtonImageSource
-The image source of the icon of the FAB *(only if IsFloatingButtonEnabled is set to **true**)*
-
-#### FloatingButtonBackgroundColor
-Type of Xamarin.Forms.Color, the background color FAB *(only if IsFloatingButtonEnabled is set to **true**)*
-
-#### FloatingButtonCommand
-Type of ICommand, the command that will execute when the user presses the FAB *(only if IsFloatingButtonEnabled is set to **true**)*
+| Property | Type | Description |
+|------------------|---------|-------------|
+| `NestedContent` | `ContentPage` | The content of the NestedScrollView |
+| `ImageSource` | `ImageSource` | The Source of the image that is used inside the CollapsingToolbar |
+| `ToolbarBackgroundColor` | `Xamarin.Forms.Color` | The background color of the toolbar |
+| `ChangeStatusBarColor` | `bool` | Type of bool, if you want to change the color of the status bar |
+| `StatusBarColor` | `Xamarin.Forms.Color` | The background color of the status bar *(only if ChangeStatusBarColor is set to **true**)* |
+| `CoordinatorScrimBackgroundColor` | `Xamarin.Forms.Color` | The color of the scrim effect in the collapsing toolbar |
+| `CoordinatorBackgroundColor` | `Xamarin.Forms.Color` | The background color of the coordinator layout (the background of the image source) |
+| `HasBackButton` | `bool` | If you want the toolbar have the back button |
+| `IsFloatingButtonEnabled` | `bool` | If you want the floating action button to be enabled |
+| `FloatingButtonImageSource` | `ImageSource` | The image source of the icon of the FAB *(only if IsFloatingButtonEnabled is set to **true**)* |
+| `FloatingButtonBackgroundColor` | `Xamarin.Forms.Color` | The background color FAB *(only if IsFloatingButtonEnabled is set to **true**)* |
+| `FloatingButtonCommand` | `ICommand` | The command that will execute when the user presses the FAB *(only if IsFloatingButtonEnabled is set to **true**)* |
