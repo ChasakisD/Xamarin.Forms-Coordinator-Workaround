@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>XamarinForms.CoordinatorLayout.Android</id>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <title>Coordinator Layout for Xamarin.Forms Android</title>
     <authors>ChasakisD</authors>
     <owners>ChasakisD</owners>
@@ -15,6 +15,7 @@
         A Xamarin.Forms Android only implementation of coordinator layout and collapsing toolbar
     </summary>
     <releaseNotes>
+      [0.0.3] - Fixed an issue with Android 8.0
       [0.0.2] - Minor Changes
     </releaseNotes>
     <copyright>Copyright 2018</copyright>
@@ -32,12 +33,12 @@
 
     <!--Android-->
     <file src="CoordinatorWorkaround\bin\Release\netstandard2.0\CoordinatorWorkaround.dll" 
-        target="lib\MonoAndroid71" />
+        target="lib\MonoAndroid81" />
     <file src="CoordinatorWorkaround\bin\Release\netstandard2.0\CoordinatorWorkaround.pdb" 
-        target="lib\MonoAndroid71" />
+        target="lib\MonoAndroid81" />
     <file src="CoordinatorWorkaround.Android\bin\Release\CoordinatorWorkaround.Android.dll" 
-        target="lib\MonoAndroid71" />
+        target="lib\MonoAndroid81" />
     <file src="CoordinatorWorkaround.Android\bin\Release\CoordinatorWorkaround.Android.pdb" 
-        target="lib\MonoAndroid71" />
+        target="lib\MonoAndroid81" />
   </files>
 </package>

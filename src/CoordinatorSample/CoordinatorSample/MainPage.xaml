@@ -2,18 +2,21 @@
 <ContentPage
     x:Class="CoordinatorSample.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:CoordinatorSample">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <StackLayout>
         <Label
             HorizontalOptions="CenterAndExpand"
             Text="Welcome to Xamarin.Forms!"
             VerticalOptions="CenterAndExpand" />
+
         <Button
-            Margin="8"
+            Margin="32,16"
+            BackgroundColor="#FF2D55"
             Clicked="Button_OnClicked"
-            HorizontalOptions="Center"
-            Text="Go To Coordinator"
+            CornerRadius="15"
+            FontAttributes="Bold"
+            HorizontalOptions="FillAndExpand"
+            Text="Go to Coordinator"
             VerticalOptions="Center" />
     </StackLayout>
 </ContentPage>

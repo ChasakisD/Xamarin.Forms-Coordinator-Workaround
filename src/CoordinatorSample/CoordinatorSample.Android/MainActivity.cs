@@ -5,7 +5,7 @@ using Android.OS;
 namespace CoordinatorSample.Droid
 {
     [Activity(Label = "CoordinatorSample", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -14,8 +14,11 @@ namespace CoordinatorSample.Droid
 
             base.OnCreate(bundle);
 
-            global::Xamarin.Forms.Forms.Init(this, bundle);
+            Xamarin.Forms.Forms.SetFlags("FastRenderers_Experimental");
+            Xamarin.Forms.Forms.Init(this, bundle);
+
             CoordinatorWorkaround.Droid.Renderers.Forms.Init();
+
             LoadApplication(new CoordinatorSample.App());
         }
     }
